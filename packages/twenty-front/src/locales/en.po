@@ -18548,3 +18548,12 @@ msgstr "Your workspace doesn't have an active subscription. Please contact your 
 #: src/modules/settings/billing/components/SettingsBillingContent.tsx
 msgid "Your workspace will be disabled"
 msgstr "Your workspace will be disabled"
+
+
+
+
+
+#. js-lingui-id: LY6ZPA
+#: src/pages/auth/SaaSSelectBusiness.tsx
+msgid "Choose a business"
+msgstr "Choose a business"

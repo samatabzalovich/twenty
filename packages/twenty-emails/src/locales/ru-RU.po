@@ -26,7 +26,7 @@ msgstr "Тестовое письмо"
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team"
-msgstr ""
+msgstr "Присоединяйтесь к вашей команде"
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
@@ -90,7 +90,7 @@ msgstr "Если вы не инициировали это изменение, �
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
 msgid "Open CRM"
-msgstr ""
+msgstr "Открыть CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
@@ -110,7 +110,7 @@ msgstr "Рабочее пространство будет деактивиро�
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "If you wish to continue using this service, please update your subscription within the next {remainingDays} {dayOrDays}."
-msgstr ""
+msgstr "Если вы хотите продолжить использование этой услуги, обновите подписку в течение следующих {remainingDays} {dayOrDays}."
 
 #. js-lingui-explicit-id
 #: src/emails/warn-suspended-workspace.email.tsx
@@ -131,17 +131,17 @@ msgstr "{senderName} (<0>{senderEmail}</0>): Пожалуйста, провер�
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
 msgid "Enabled"
-msgstr ""
+msgstr "Включено"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
 msgid "Disabled"
-msgstr ""
+msgstr "Неполноценный"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
 msgid "Server administrator access changed"
-msgstr ""
+msgstr "Доступ администратора сервера изменен"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -186,7 +186,7 @@ msgstr "Все данные в этом рабочем пространстве 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "If you wish to use this service again, you can create a new workspace."
-msgstr ""
+msgstr "Если вы хотите снова использовать эту услугу, вы можете создать новое рабочее пространство."
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
@@ -196,19 +196,19 @@ msgstr "Создать новое рабочее пространство"
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
 msgid "serverAdminAccessChanged.summary"
-msgstr ""
+msgstr "serverAdminAccessChanged.summary"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
 msgid "serverAdminAccessChanged.fullAdmin"
-msgstr ""
+msgstr "serverAdminAccessChanged.fullAdmin"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
 msgid "serverAdminAccessChanged.warning"
-msgstr ""
+msgstr "serverAdminAccessChanged.warning"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
 msgid "serverAdminAccessChanged.impersonation"
-msgstr ""
+msgstr "serverAdminAccessChanged.impersonation"

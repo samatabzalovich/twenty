@@ -9,4 +9,5 @@
 
 export type { AppLocale } from './constants/AppLocales';
 export { APP_LOCALES } from './constants/AppLocales';
+export { DEFAULT_LOCALE } from './constants/DefaultLocale';
 export { SOURCE_LOCALE } from './constants/SourceLocale';

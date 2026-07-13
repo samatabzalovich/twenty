@@ -111,7 +111,7 @@ export class ApolloFactory implements ApolloManager {
       const authLink = setContext(async (_, { headers }) => {
         const tokenPair = getTokenPair();
 
-        const locale = this.currentWorkspaceMember?.locale ?? i18n.locale;
+        const locale = i18n.locale ?? this.currentWorkspaceMember?.locale;
 
         if (isUndefinedOrNull(tokenPair)) {
           return {

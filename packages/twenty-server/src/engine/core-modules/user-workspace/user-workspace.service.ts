@@ -2,7 +2,7 @@ import { Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 
 import { TypeOrmQueryService } from '@ptc-org/nestjs-query-typeorm';
-import { type APP_LOCALES, SOURCE_LOCALE } from 'twenty-shared/translations';
+import { type APP_LOCALES, DEFAULT_LOCALE } from 'twenty-shared/translations';
 import { FileFolder } from 'twenty-shared/types';
 import { assertIsDefinedOrThrow, isDefined } from 'twenty-shared/utils';
 import { IsNull, Not, type QueryRunner, type Repository } from 'typeorm';
@@ -173,7 +173,7 @@ export class UserWorkspaceService extends TypeOrmQueryService<UserWorkspaceEntit
         userId: user.id,
         userEmail: user.email,
         avatarUrl: userWorkspace.defaultAvatarUrl ?? null,
-        locale: (user.locale ?? SOURCE_LOCALE) as keyof typeof APP_LOCALES,
+        locale: (user.locale ?? DEFAULT_LOCALE) as keyof typeof APP_LOCALES,
       });
 
       const workspaceMember = await workspaceMemberRepository.find({

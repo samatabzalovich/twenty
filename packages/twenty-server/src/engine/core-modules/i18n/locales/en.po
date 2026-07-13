@@ -8735,3 +8735,31 @@ msgstr "Your team member responsible for managing the company account"
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts
 msgid "Your workspace has been updated with a new data model. Please refresh the page."
 msgstr "Your workspace has been updated with a new data model. Please refresh the page."
+
+#. js-lingui-id: 6+byWT
+msgid "By Stage"
+msgstr "By Stage"
+
+#. js-lingui-id: pdOYzu
+msgid "All {objectLabelPlural}"
+msgstr "All {objectLabelPlural}"
+
+
+
+
+
+#. js-lingui-id: jQX8V+
+msgid "By Status"
+msgstr "By Status"
+
+#. js-lingui-id: kZ7PLo
+msgid "Assigned to Me"
+msgstr "Assigned to Me"
+
+#. js-lingui-id: ao1zYt
+msgid "All Tasks"
+msgstr "All Tasks"
+
+#. js-lingui-id: WbTDwg
+msgid "In Progress"
+msgstr "In Progress"

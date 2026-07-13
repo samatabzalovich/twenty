@@ -3,6 +3,7 @@ import { InjectDataSource, InjectRepository } from '@nestjs/typeorm';
 
 import { msg } from '@lingui/core/macro';
 import { TWENTY_ICONS_BASE_URL } from 'twenty-shared/constants';
+import { DEFAULT_LOCALE } from 'twenty-shared/translations';
 import { isDefined } from 'twenty-shared/utils';
 import { WorkspaceActivationStatus } from 'twenty-shared/workspace';
 import {
@@ -105,7 +106,7 @@ export class SignInUpService {
       firstName: newUserPayload.firstName ?? '',
       lastName: newUserPayload.lastName ?? '',
       picture: newUserPayload.picture ?? '',
-      locale: newUserPayload.locale ?? 'en',
+      locale: newUserPayload.locale ?? DEFAULT_LOCALE,
       isEmailVerified: newUserPayload.isEmailAlreadyVerified,
     };
 

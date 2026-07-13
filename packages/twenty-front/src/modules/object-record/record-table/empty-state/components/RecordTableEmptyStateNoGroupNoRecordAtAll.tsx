@@ -1,3 +1,4 @@
+import { useLingui } from '@lingui/react/macro';
 import { useObjectLabel } from '@/object-metadata/hooks/useObjectLabel';
 import { useRecordTableContextOrThrow } from '@/object-record/record-table/contexts/RecordTableContext';
 import { RecordTableEmptyStateDisplay } from '@/object-record/record-table/empty-state/components/RecordTableEmptyStateDisplay';
@@ -7,6 +8,7 @@ import { useCreateNewIndexRecord } from '@/object-record/record-table/hooks/useC
 import { IconPlus } from 'twenty-ui/icon';
 
 export const RecordTableEmptyStateNoGroupNoRecordAtAll = () => {
+  const { t } = useLingui();
   const { objectMetadataItem } = useRecordTableContextOrThrow();
 
   const { createNewIndexRecord } = useCreateNewIndexRecord({
@@ -19,7 +21,7 @@ export const RecordTableEmptyStateNoGroupNoRecordAtAll = () => {
 
   const objectLabelSingular = useObjectLabel(objectMetadataItem);
 
-  const buttonTitle = `Add a ${objectLabelSingular}`;
+  const buttonTitle = t`Add a ${objectLabelSingular}`;
 
   const title = getEmptyStateTitle(
     objectMetadataItem.nameSingular,
