@@ -7,19 +7,19 @@ import { REACT_APP_SERVER_BASE_URL } from '~/config';
 
 export const PageFavicon = () => {
   const workspacePublicData = useAtomStateValue(workspacePublicDataState);
+  const faviconHref = workspacePublicData?.logo
+    ? (getImageAbsoluteURI({
+        imageUrl: workspacePublicData.logo,
+        baseUrl: REACT_APP_SERVER_BASE_URL,
+      }) ?? DEFAULT_WORKSPACE_LOGO)
+    : DEFAULT_WORKSPACE_LOGO;
+
   return (
     <Helmet>
       <link
         rel="icon"
-        type="image/x-icon"
-        href={
-          workspacePublicData?.logo
-            ? (getImageAbsoluteURI({
-                imageUrl: workspacePublicData.logo,
-                baseUrl: REACT_APP_SERVER_BASE_URL,
-              }) ?? DEFAULT_WORKSPACE_LOGO)
-            : DEFAULT_WORKSPACE_LOGO
-        }
+        type={faviconHref.endsWith('.svg') ? 'image/svg+xml' : 'image/x-icon'}
+        href={faviconHref}
       />
     </Helmet>
   );
